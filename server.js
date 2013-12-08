@@ -26,7 +26,7 @@ wss.broadcast = function(data) {
 
 function emit(event) {
   var out;
-  console.log("EVENT", event);
+//   console.log("EVENT", event);
   if (event.type === "setup") {
     out = [1, event.id, event.parentId, event.name];
   }

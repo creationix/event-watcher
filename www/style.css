@@ -1,9 +1,13 @@
+body {
+  background-color: #222;
+}
+
 svg {
   position: absolute; left: 0; top: 0;
 }
 .node circle {
   cursor: pointer;
-  stroke: #3182bd;
+  stroke: #9ecae1;
   stroke-width: 1.5px;
 }
 
@@ -11,6 +15,7 @@ svg {
   font: 10px sans-serif;
   pointer-events: none;
   text-anchor: middle;
+  fill: #fff;
 }
 
 line.link {

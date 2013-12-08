@@ -5,7 +5,7 @@ function forceVisual(roots) {
   var height = window.innerHeight;
 
   var force = d3.layout.force()
-      .linkDistance(80)
+      .linkDistance(40)
       .charge(-120)
       .gravity(0.05)
       .size([width, height])
@@ -74,8 +74,8 @@ function forceVisual(roots) {
   }
 
   function color(d) {
-    return d._children ? "#3182bd" // collapsed package
-        : d.children ? "#c6dbef" // expanded package
+    return d._children ? "#444" // collapsed package
+        : d.children ? "#3182bd" // expanded package
         : "#fd8d3c"; // leaf node
   }
 
